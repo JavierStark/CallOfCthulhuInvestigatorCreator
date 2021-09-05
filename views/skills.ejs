@@ -1,0 +1,79 @@
+<div class="section">
+  <h1 class="mx-auto" style="width: 70%">Skills</h1>
+  <div class="mx-auto" style="width: 70%">
+    <div class="input-group" style="width: 70%;">
+      <select
+        class="form-select pSkillSelector"
+        onchange="checkSelectedSkills()"
+        id="skill1"
+      >
+        <option selected value="none">None</option>
+        <option value="strength">STR</option>
+        <option value="constitution">CON</option>
+        <option value="size">SIZ</option>
+        <option value="dexterity">DEX</option>
+        <option value="appearance">APP</option>
+        <option value="education">EDU</option>
+        <option value="intelligence">INT</option>
+        <option value="power">POW</option>
+      </select>
+
+      <label class="input-group-text bg-dark text-white">x</label>
+
+      <input
+        type="number"
+        class="form-control pMultiplierInput"
+        placeholder="Multiplier"
+        name="multiplier1"
+        min="0"
+        max="4"
+        id="multiplier1"
+      />
+
+      <label class="input-group-text bg-info"> + </label>
+
+      <select
+        class="form-select pSkillSelector"
+        onchange="checkSelectedSkills()"
+        id="skill2"
+      >
+        <option selected value="none">None</option>
+        <option value="strenght">STR</option>
+        <option value="constitution">CON</option>
+        <option value="size">SIZ</option>
+        <option value="dexterity">DEX</option>
+        <option value="appearance">APP</option>
+        <option value="education">EDU</option>
+        <option value="intelligence">INT</option>
+        <option value="power">POW</option>
+      </select>
+
+      <label class="input-group-text bg-dark text-white">x</label>
+
+      <input
+        type="number"
+        class="form-control pMultiplierInput"
+        placeholder="Multiplier"
+        name="multiplier2"
+        min="0"
+        max="4"
+        id="multiplier2"
+      />
+
+      <button type="button" class="input-group-text btn-danger shadow-none shadow-none" onclick="calcSkillPoints()">Calculate =</button type="button">
+
+      <input
+        type="number"
+        class="form-control border border-danger"
+        placeholder="Result"
+        name="result"
+        readonly
+        id="result"
+      />
+
+    </div>
+  </div>
+  <script>
+    checkSelectedSkills();
+  </script>
+</div>

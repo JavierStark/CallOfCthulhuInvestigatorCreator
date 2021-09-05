@@ -1,0 +1,100 @@
+<div class="section">
+  <h1 class="mx-auto" style="width: 70%">Secondary Attributes</h1>
+  <div class="row mx-auto g-2" style="width: 70%">
+    <div class="col-md-1">
+      <label for="luck" class="form-label center">Luck</label>
+      <input
+        type="number"
+        class="form-control center"
+        placeholder="Luck"
+        name="luck"
+        min="0"
+        max="100"
+        id="luck"
+      />
+      <div class="center mt-1">
+        <button type="button"
+          class="btn btn-danger shadow-none shadow-none"
+          onclick="throwDice(this.parentElement.parentElement.children[1], 3, 6, 5)"
+        >
+          🎲
+        </button type="button">
+      </div>
+    </div>
+
+    <div class="col-md-1">
+      <label for="hp" class="form-label center">HP</label>
+      <input
+        type="number"
+        class="form-control center dependent"
+        placeholder="HP"
+        name="hp"
+        readonly
+        id="hp"
+      />
+    </div>
+
+    <div class="col-md-1"></div>
+
+    <div class="col-md-1">
+      <label for="movement" class="form-label center">MOV</label>
+      <input
+        type="number"
+        class="form-control center dependent"
+        placeholder="MOV"
+        name="movement"
+        readonly
+        id="movement"
+      />
+    </div>
+
+    <div class="col-md-1">
+      <label for="sanity" class="form-label center">Sanity</label>
+      <input
+        type="number"
+        class="form-control center dependent"
+        placeholder="Sanity"
+        name="sanity"
+        readonly
+        id="sanity"
+      />
+    </div>
+
+    <div class="col-md-1">
+      <label for="magicPoints" class="form-label center">Magic</label>
+      <input
+        type="number"
+        class="form-control center dependent"
+        placeholder="Magic P"
+        name="magicPoints"
+        readonly
+        id="magicPoints"
+      />
+    </div>
+
+    <div class="col-md-1"></div>
+
+    <div class="col-md-2">
+      <label for="damageBonus" class="form-label center">Damage Bonus</label>
+      <input
+        type="text"
+        class="form-control center dependent"
+        placeholder="Damage Bonus"
+        name="damageBonus"
+        readonly
+        id="damageBonus"
+      />
+    </div>
+    <div class="col-md-1">
+      <label for="build" class="form-label center">Build</label>
+      <input
+        type="text"
+        class="form-control center dependent"
+        placeholder="Build"
+        name="build"
+        readonly
+        id="build"
+      />
+    </div>
+  </div>
+</div>

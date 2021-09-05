@@ -1,0 +1,86 @@
+<div class="section">
+  <h1 class="mx-auto" style="width: 70%">Basic Info</h1>
+
+  <div class="mx-auto row g-2" style="width: 70%">
+    <div class="col-md-2">
+      <label for="name" class="form-label">Name</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Name"
+        name="name"
+        id="name"
+      />
+    </div>
+    <div class="col-md-3">
+      <label for="surname" class="form-label">Surname</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Surname"
+        name="surname"
+        id="surname"
+      />
+    </div>
+  </div>
+
+  <div class="mx-auto row g-2" style="width: 70%">
+    <div class="col-md-3">
+      <label for="playerName" class="form-label">Player Name</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Player Name"
+        name="playerName"
+        id="playerName"
+      />
+    </div>
+  </div>
+
+  <div class="mx-auto row g-2" style="width: 70%">
+    <div class="col-md-1">
+      <label for="age" class="form-label">Age</label>
+      <input
+        type="number"
+        class="form-control independent"
+        placeholder="Age"
+        name="age"
+        min="15"
+        max="89"
+        id="age"
+        oninput="characteristicsUpdated()"
+      />
+    </div>
+    <div class="col-md-2">
+      <label for="sex" class="form-label">Sex</label>
+      <select class="form-select" name="sex" id="sex">
+        <option selected>Choose</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="mx-auto row g-2" style="width: 70%">
+    <div class="col-md-2">
+      <label for="residence" class="form-label">Residence</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Residence"
+        name="residence"
+        id="residence"
+      />
+    </div>
+    <div class="col-md-2">
+      <label for="birthplace" class="form-label">Birthplace</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Birthplace"
+        name="birthplace"
+        id="birthplace"
+      />
+    </div>
+  </div>
+</div>

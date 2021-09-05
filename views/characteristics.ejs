@@ -1,0 +1,183 @@
+<div class="section">
+  <h1 class="mx-auto" style="width: 70%">Characteristics</h1>
+  <form action="/" method="POST">
+    <div class="row mx-auto g-2" style="width: 70%">
+      <div class="col">
+        <label for="strength" class="form-label center">STR</label>
+        <input
+          type="number"
+          class="form-control center independent"
+          placeholder="Strength"
+          name="strength"
+          min="0"
+          max="100"
+          id="strength"
+          oninput="characteristicsUpdated()"
+        />
+        <div class="text-center mt-1">
+          <button type="button"
+            class="btn btn-danger shadow-none"
+            onclick="throwDice(this.parentElement.parentElement.children[1], 3, 6, 5)"
+          >
+            🎲
+          </button type="button">
+        </div>
+      </div>
+
+      <div class="col">
+        <label for="constitution" class="form-label center">CON</label>
+        <input
+          type="number"
+          class="form-control center independent"
+          placeholder="Constitution"
+          name="constitution"
+          min="0"
+          max="100"
+          id="constitution"
+          oninput="characteristicsUpdated()"
+
+        />
+        <div class="text-center mt-1">
+          <button type="button"
+            class="btn btn-danger shadow-none"
+            onclick="throwDice(this.parentElement.parentElement.children[1], 3, 6, 5)"
+          >
+            🎲
+          </button type="button">
+        </div>
+      </div>
+
+      <div class="col">
+        <label for="size" class="form-label center">SIZ</label>
+        <input
+          type="number"
+          class="form-control center independent"
+          placeholder="Size"
+          name="size"
+          min="0"
+          max="100"
+          id="size"
+          oninput="characteristicsUpdated()"
+        />
+        <div class="text-center mt-1">
+          <button type="button"
+            class="btn btn-danger shadow-none"
+            onclick="throwDice(this.parentElement.parentElement.children[1], 2, 6, 5, 6)"
+          >
+            🎲
+          </button type="button">
+        </div>
+      </div>
+
+      <div class="col">
+        <label for="dexterity" class="form-label center">DEX</label>
+        <input
+          type="number"
+          class="form-control center independent"
+          placeholder="Dexterity"
+          name="dexterity"
+          min="0"
+          max="100"
+          id="dexterity"
+          oninput="characteristicsUpdated()"
+        />
+        <div class="text-center mt-1">
+          <button type="button"
+            class="btn btn-danger shadow-none"
+            onclick="throwDice(this.parentElement.parentElement.children[1], 3, 6, 5)"
+          >
+            🎲
+          </button type="button">
+        </div>
+      </div>
+
+      <div class="col">
+        <label for="appearance" class="form-label center">APP</label>
+        <input
+          type="number"
+          class="form-control center independent"
+          placeholder="Appearance"
+          name="appearance"
+          min="0"
+          max="100"
+          id="appearance"
+          oninput="characteristicsUpdated()"
+        />
+        <div class="text-center mt-1">
+          <button type="button"
+            class="btn btn-danger shadow-none"
+            onclick="throwDice(this.parentElement.parentElement.children[1], 3, 6, 5)"
+          >
+            🎲
+          </button type="button">
+        </div>
+      </div>
+
+      <div class="col">
+        <label for="intelligence" class="form-label center">INT</label>
+        <input
+          type="number"
+          class="form-control center independent"
+          placeholder="Intelligence"
+          name="intelligence"
+          min="0"
+          max="100"
+          id="intelligence"
+          oninput="characteristicsUpdated()"
+        />
+        <div class="text-center mt-1">
+          <button type="button"
+            class="btn btn-danger shadow-none"
+            onclick="throwDice(this.parentElement.parentElement.children[1], 2, 6, 5, 6)"
+          >
+            🎲
+          </button type="button">
+        </div>
+      </div>
+
+      <div class="col">
+        <label for="power" class="form-label center">POW</label>
+        <input
+          type="number"
+          class="form-control center independent"
+          placeholder="Power"
+          name="power"
+          min="0"
+          max="100"
+          id="power"
+          oninput="characteristicsUpdated()"
+        />
+        <div class="text-center mt-1">
+          <button type="button"
+            class="btn btn-danger shadow-none"
+            onclick="throwDice(this.parentElement.parentElement.children[1], 3, 6, 5)"
+          >
+            🎲
+          </button type="button">
+        </div>
+      </div>
+
+      <div class="col">
+        <label for="education" class="form-label center">EDU</label>
+        <input
+          type="number"
+          class="form-control center independent"
+          placeholder="Education"
+          name="education"
+          min="0"
+          max="100"
+          id="education"
+          oninput="characteristicsUpdated()"
+        />
+        <div class="text-center mt-1">
+          <button type="button"
+            class="btn btn-danger shadow-none"
+            onclick="throwDice(this.parentElement.parentElement.children[1], 2, 6, 5, 6)"
+          >
+            🎲
+          </button type="button">
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
