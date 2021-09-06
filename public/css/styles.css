@@ -49,3 +49,11 @@ input::-webkit-inner-spin-button {
 .row {
   margin-bottom: 8px;
 }
+
+img {
+  width: 50%;
+}
+
+.charLabel {
+  width: 25px;
+}

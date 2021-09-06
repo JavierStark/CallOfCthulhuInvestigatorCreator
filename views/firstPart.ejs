@@ -1,0 +1,18 @@
+<%- include('header'); %>
+<form action="/" method="POST">
+
+  <%- include('basicInfo') %>
+  <%- include('characteristics') %>
+  <%- include('secondaryAttributes') %>
+
+  <div class="row mx-auto" style="width: 70%">
+    <input
+      type="submit"
+      class="btn btn-secondary mx-auto mt-3"
+      style="width: 10%"
+      value="Create"
+    />
+  </div>  
+</form>
+
+<%- include('footer'); %>
