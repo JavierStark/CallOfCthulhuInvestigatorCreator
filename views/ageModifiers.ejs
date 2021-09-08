@@ -14,40 +14,87 @@
 
   <br>
 
-
-  <div class="row d-none" id="strMod">
-    <div class="col-auto">
-      <label class="col-form-label charLabel">STR</label>
+  <div class="row border pt-3 d-none" id="reduceDiv">   
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-1" style="padding-left: 0;">
+        <input type="number" class="form-control shadow-none"  readonly id="pointsToReduce">
+      </div>
+    </div> 
+    <div class="row d-none" id="strMod">
+      <div class="col-auto">
+        <label class="col-form-label charLabel">STR</label>
+      </div>
+      <div class="col-md-1 input-group pb-2" style="width: 20%;">
+        <input type="number" class="form-control shadow-none" readonly value="<%= sheet.characteristics.strength %>">
+        <label class="input-group-text bg-dark text-white">-</label>
+        <input type="number" class="form-control shadow-none mod" oninput="modValueChanged(this)" min="0" value="0">
+      </div>
+      <div class="col-auto">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30"  height="44" fill="currentColor"  class="bi bi-arrow-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+        </svg>
+      </div>
+      <div class="col-md-1">
+        <input type="number" class="form-control shadow-none" readonly value="">      
+      </div>
     </div>
-    <div class="col-md-1">
-      <input type="number" class="form-control shadow-none" readonly value="<%= sheet.characteristics.strength %>">
+  
+    <div class="row d-none" id="conMod">
+      <div class="col-auto">
+        <label class="col-form-label charLabel">CON</label>
+      </div>
+      <div class="col-md-1 input-group pb-2" style="width: 20%;">
+        <input type="number" class="form-control shadow-none" readonly value="<%= sheet.characteristics.strength %>">
+        <label class="input-group-text bg-dark text-white">-</label>
+        <input type="number" class="form-control shadow-none mod" oninput="modValueChanged(this)" min="0" value="0">
+      </div>
+      <div class="col-auto">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30"  height="44" fill="currentColor"  class="bi bi-arrow-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+        </svg>
+      </div>
+      <div class="col-md-1">
+        <input type="number" class="form-control shadow-none" readonly value="">      
+      </div>
     </div>
-  </div>
-
-  <div class="row d-none" id="conMod">
-    <div class="col-auto">
-      <label class="col-form-label charLabel">CON</label>
+  
+    <div class="row d-none" id="sizMod">
+      <div class="col-auto">
+        <label class="col-form-label charLabel">SIZ</label>
+      </div>
+      <div class="col-md-1 input-group pb-2" style="width: 20%;">
+        <input type="number" class="form-control shadow-none" readonly value="<%= sheet.characteristics.strength %>">
+        <label class="input-group-text bg-dark text-white">-</label>
+        <input type="number" class="form-control shadow-none mod" oninput="modValueChanged(this)" min="0" value="0">
+      </div>
+      <div class="col-auto">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30"  height="44" fill="currentColor"  class="bi bi-arrow-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+        </svg>
+      </div>
+      <div class="col-md-1">
+        <input type="number" class="form-control shadow-none" readonly value="">      
+      </div>
     </div>
-    <div class="col-md-1">
-      <input type="number" class="form-control shadow-none" readonly value="<%= sheet.characteristics.constitution %>">
-    </div>
-  </div>
-
-  <div class="row d-none" id="sizMod">
-    <div class="col-auto">
-      <label class="col-form-label charLabel">SIZ</label>
-    </div>
-    <div class="col-md-1">
-      <input type="number" class="form-control shadow-none" readonly value="<%= sheet.characteristics.size %>">
-    </div>
-  </div>
-
-  <div class="row d-none" id="dexMod">
-    <div class="col-auto">
-      <label class="col-form-label charLabel">DEX</label>
-    </div>
-    <div class="col-md-1">
-      <input type="number" class="form-control shadow-none" readonly value="<%= sheet.characteristics.dexterity %>">
+  
+    <div class="row d-none" id="dexMod">
+      <div class="col-auto">
+        <label class="col-form-label charLabel">DEX</label>
+      </div>
+      <div class="col-md-1 input-group pb-2" style="width: 20%;">
+        <input type="number" class="form-control shadow-none" readonly value="<%= sheet.characteristics.strength %>">
+        <label class="input-group-text bg-dark text-white">-</label>
+        <input type="number" class="form-control shadow-none mod" oninput="modValueChanged(this)" min="0" value="0">
+      </div>
+      <div class="col-auto">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30"  height="44" fill="currentColor"  class="bi bi-arrow-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+        </svg>
+      </div>
+      <div class="col-md-1">
+        <input type="number" class="form-control shadow-none" readonly value="">      
+      </div>
     </div>
   </div>
 
@@ -58,6 +105,14 @@
     <div class="col-md-1">
       <input type="number" class="form-control shadow-none" readonly value="<%= sheet.characteristics.appearance %>">
     </div>
+    <div class="col-auto">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30"  height="44" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+      </svg>
+    </div>
+    <div class="col-md-1">
+      <input type="number" class="form-control shadow-none" readonly>      
+    </div>
   </div>
 
   <div class="row" id="eduMod">
@@ -66,6 +121,23 @@
     </div>
     <div class="col-md-1">
       <input type="number" class="form-control shadow-none" readonly value="<%= sheet.characteristics.education %>">
+    </div>
+    <div class="col-auto">
+      <svg xmlns="http://www.w3.org/2000/svg" width="30"  height="44" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+      </svg>
+    </div>
+    <div class="col-md-1">
+      <input type="number" class="form-control shadow-none" value="<%= sheet.characteristics.education %>">      
+    </div>
+    <div class="col-auto" style="padding-left: 0;">
+      <div class="text-center">
+        <button type="button"
+        class="btn btn-danger shadow-none"
+        onclick="eduImprovementCheck()"
+        >
+        🎲
+      </button>
     </div>
   </div>
 
